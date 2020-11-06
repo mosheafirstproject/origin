@@ -1,0 +1,43 @@
+#HomePageH1
+{
+    margin: auto;
+    color: brown;
+}
+#headsbody
+{
+    padding-top:50px;
+}
+.container
+{
+ background-color: burlywood;
+}
+button
+{
+    background-color: chartreuse;
+}
+#searchform
+{
+    width: 400px;
+    margin-right: 20%;
+    background-color: chocolate;
+    border:3px yellow;
+}
+.admin_view_orders
+{
+    background-color: cyan;
+    margin-left: 2%;
+    width: 50px;
+    border:2px solid Violet;
+}
+.h3Add
+{
+    font-style: italic;
+    color: darkgoldenrod;
+}
+.addBookForm
+{
+    width: 40px;
+    height: 100px;
+    margin-bottom: 22%;
+    background-color: greenyellow;
+}

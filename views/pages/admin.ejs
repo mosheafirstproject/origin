@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin</title>
+    <script src="../../controllers/adminController.js"></script>
+    <script src="../../models/OrdersModel.js"></script>
+    <script src="ejs.min.js"></script>
+    <script src="../../controllers/adminController"></script>
+    <link rel="stylesheet" href="../styles.css">
+    <%- include ("../partials/head") %>
+</head>
+<body class="container">
+    <header>
+        <%- include ("../partials/header") %>
+    </header>
+    <h1>this is admin page</h1>
+    <form id="searchform" method="GET">
+        this is a form who will find the searched object in show here
+        
+        <input type="text" id="searchname"><br><br>
+        <button id="searchbutton" type="submit">חפש</button>
+        
+
+
+        
+    </form>
+
+    
+    <form method="GET" action="./admin.ejs" class="addBookForm">
+        <fieldset>
+        שיוכל ליצור אובייקט חדש כאן
+        
+        <button type="button" onclick="startUploadDAta()"> הוסף וערוך</button>
+        <h3 class="h3Add">add a new book</h3>
+        image:<label for="myfile">Select a image:</label>
+        <input type="file" id="myfile" name="myfile">
+        </fieldset>
+    </form>
+
+
+
+
+
+
+    <form method="GET" action="../../controllers/ordersController.js">
+        <div class="admin_view_orders">
+            <p>here is all the orders: </p>
+            שיופיע פה כל הADMIN CONTROLLER
+
+
+         <!-- פה אני צריך להציג את פרטי הלקוח וההזמנה שנשמרו בTODAVIEW.EJS -->
+        </div>
+    </form>
+<footer>
+    <%- include ("../partials/footer") %>
+</footer>
+</body>
+</html>
